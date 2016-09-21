@@ -1,7 +1,7 @@
 body {
 /*    So that the static footer doesn't cover content'*/
     margin-bottom: 80px;
-    
+    font-family: 'Raleway', sans-serif;
 }
 
 .page-header {

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Project</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Tech Site</a>
+                    
+<!--                data-target=".navHeaderCollapse" will target the div below with the class navHeaderCollapse-->
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                        
+<!--                    These three spans with class icon-bar make the hamburger menu icon-->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse navHeaderCollapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Instragram</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#contact" data-toggle="modal">Contact</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1>Hello, World</h1>
+                <p>In this tutorial, we will be adding a jumbotron (formerly known as a hero unit) to our site. The purpose of the jumbotron is for large messages that you want your viewers to see clearly, such as your latest video or blog post.</p>
+                <a class="btn btn-default">Watch Now!</a>
+                <a class="btn btn-info">Tweet!</a>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3><a href="#">$500 Gaming PC Build</a></h3>
+                    <p>Lorem ipsum dolor sit amet, ea his labitur quaestio, eos omittam postulant at, ei erroribus definitiones eam. Eu qui persecuti assueverit, te quas mundi choro sed, ut qui aliquip vituperata. Eam posse eruditi ei. Nec hinc pertinacia eu, eam at cetero eruditi facilis. Vel ad docendi eligendi. Dico dolores referrentur nec ad.</p>
+                    <a href="#" class="btn=default">Read More</a>
+                </div>
+                <div class="col-md-3">
+                    <h3><a href="#">$500 Gaming PC Build</a></h3>
+                    <p>Lorem ipsum dolor sit amet, ea his labitur quaestio, eos omittam postulant at, ei erroribus definitiones eam. Eu qui persecuti assueverit, te quas mundi choro sed, ut qui aliquip vituperata. Eam posse eruditi ei. Nec hinc pertinacia eu, eam at cetero eruditi facilis. Vel ad docendi eligendi. Dico dolores referrentur nec ad.</p>
+                    <a href="#" class="btn=default">Read More</a>
+                </div>
+                <div class="col-md-3">
+                    <h3><a href="#">$500 Gaming PC Build</a></h3>
+                    <p>Lorem ipsum dolor sit amet, ea his labitur quaestio, eos omittam postulant at, ei erroribus definitiones eam. Eu qui persecuti assueverit, te quas mundi choro sed, ut qui aliquip vituperata. Eam posse eruditi ei. Nec hinc pertinacia eu, eam at cetero eruditi facilis. Vel ad docendi eligendi. Dico dolores referrentur nec ad.</p>
+                    <a href="#" class="btn=default">Read More</a>
+                </div>
+                <div class="col-md-3">
+                    <h3><a href="#">$500 Gaming PC Build</a></h3>
+                    <p>Lorem ipsum dolor sit amet, ea his labitur quaestio, eos omittam postulant at, ei erroribus definitiones eam. Eu qui persecuti assueverit, te quas mundi choro sed, ut qui aliquip vituperata. Eam posse eruditi ei. Nec hinc pertinacia eu, eam at cetero eruditi facilis. Vel ad docendi eligendi. Dico dolores referrentur nec ad.</p>
+                    <a href="#" class="btn=default">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <p class="navbar-text pull-left">Site Built by Myhkail Mendoza</p>
+                <a href="https://youtube.com" class="navbar-btn btn btn-danger pull-right">Subscribe on YouTube</a>
+<!--                <button class="navbar-btn btn btn-danger pull-right">Subscribe on YouTube</button>-->
+            </div>
+        </div>
+        
+        
+<!--        Load this modal last almost last since user wont open the modal right away anyways.-->
+        <div class="modal fade" id="contact" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <form class="form-horizontal">
+                        <div class="modal-header">
+                            <h4>Contact Tech Site</h4>
+                        </div>
+                        <div class="modal-body">
+                            
+                            <div class="form-group">
+                                <label for="contact-name" class="col-lg-2 control-label">Name</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email" class="col-lg-2 control-label">Email</label>
+                                <div class="col-lg-10">
+                                    <input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email" class="col-lg-2 control-label">Message</label>
+                                <div class="col-lg-10">
+                                    <textarea class="form-control" rows="8"></textarea>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-default" data-dismiss="modal">Cancel</a>
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.js"></script>
+        
+        
+    </body>
+</html>
